@@ -1,5 +1,6 @@
 # $ Gambing Game $
 > This is my first website, hope you enjoy!
+
 ![Gamble Game Logo](/Images/Logo.png)
 
 ### What is this game about?

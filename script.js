@@ -95,19 +95,19 @@ GambleAllButton.addEventListener("click", function(){
 });
 
 GameIconButton.addEventListener("click", function(){
-  window.location.replace("https://AyameKajou56.github.io/Images/Logo.png");
+  window.open("https://AyameKajou56.github.io/Images/Logo.png", "_blank");
 });
 
-window.addEventListener("keypress", function(Key){
-  let GiveMoneyKey = '}';
-  console.log(Key.key);
+// window.addEventListener("keypress", function(Key){
+//   let GiveMoneyKey = '}';
+//   console.log(Key.key);
 
-  if (Key.key === GiveMoneyKey){
-    let Amount = this.prompt("How much money do you want?", "Ex: 999");
+//   if (Key.key === GiveMoneyKey){
+//     let Amount = this.prompt("How much money do you want?", "Ex: 999");
 
-    Money = Number(Amount);
-    RefreshMoney(Money);
-  }else if (Key.key === 'R'){
-    location.replace("https://shattereddisk.github.io/rickroll/rickroll.mp4");
-  }
-});
+//     Money = Number(Amount);
+//     RefreshMoney(Money);
+//   }else if (Key.key === 'R'){
+//     location.replace("https://shattereddisk.github.io/rickroll/rickroll.mp4");
+//   }
+// });
