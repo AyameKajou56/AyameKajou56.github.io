@@ -1,138 +1,133 @@
 html {
-  height: 100%;
-  width: 100%;
-}
-
-body {
-  background-color: #262323;
-}
-
-#Money_Text {
-  width: 250px;
-  height: 25px;
-
-  margin: auto;
-  padding-top: 10px;
-
-  border: true;
-
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-  border-bottom-left-radius: 50px;
-
-  border-top-color: #34eb64;
-  border-bottom-color: #168032;
-  border-left-color: #04c237;
-  border-right-color: #04c237;
-
-  border-top-style: dashed;
-  border-bottom-style: dashed;
-  border-left-style: solid;
-  border-right-style: solid;
-
-  border-width: 2px;
-
-  text-align: center;
-  color: #25fa2d;
-  font-family: 'Lucida Console', monospace;
-}
-
-#Money_Text:Hover {
-  border-top-style: sloid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  border-right-style: solid;
-
-  color: #00ff00;
-  font-size: 20px;
-
-  text-shadow: #00ff00 1px 0 10px;
-}
-
-.ClickButton {
-
-  border: true;
-  border-style: inset;
-  border-color: #8f8f8f;
-  border-width: 2px;
-
-  text-align: center;
-  font-family: 'Lucida Console', monospace;
-}
-
-.ClickButton:Hover {
-  border-style: outset;
-  border-color: #8f8f8f;
-  border-width: 2px;
-
-  text-align: center;
-  font-family: 'Lucida Console', monospace;
-}
-
-input {
-  border: true;
-
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-  border-bottom-left-radius: 50px;
-
-  border-color: #c7c7c7;
-
-  border-style: solid;
-
-  border-width: 2px;
-
-  text-align: center;
-  color: #000000;
-  font-family: 'Lucida Console', monospace;
-}
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-input[type=number] {
-  appearance: textfield;
-}
-
-#Amount_Input {
-  width: 100px;
-  height: 25px;
+    height: 100%;
+    width: 100%;
+  }
   
-  margin: auto;
-  display: block;
-}
-
-#Gamble_Button {
-  margin: auto;
-  display: block;
-
-  text-align: center;
-}
-
-#Gamble_All_Button {
-  margin: auto;
-  display: block;
-
-  text-align: center;
-}
-
-#Text2 {
-  color: #ffffff;
-  font-family: monospace;
-  font-size: 11px;
-
-  margin: auto;
-  display: block;
-  text-align: center;
-}
+  body {
+    background-color: #262323;
+  }
+  
+  #Money_Text {
+    width: 250px;
+    height: 25px;
+  
+    margin: auto;
+    padding-top: 10px;
+  
+    border: true;
+  
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+  
+    border-top-color: #34eb64;
+    border-bottom-color: #168032;
+    border-left-color: #04c237;
+    border-right-color: #04c237;
+  
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    border-left-style: solid;
+    border-right-style: solid;
+  
+    border-width: 2px;
+  
+    text-align: center;
+    color: #25fa2d;
+    font-family: 'Lucida Console', monospace;
+  }
+  
+  #Money_Text:Hover {
+    border-top-style: sloid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+  
+    color: #00ff00;
+    font-size: 20px;
+  
+    text-shadow: #00ff00 1px 0 10px;
+  }
+  
+  .ClickButton {
+  
+    border: true;
+    border-style: inset;
+    border-color: #8f8f8f;
+    border-width: 2px;
+  
+    text-align: center;
+    font-family: 'Lucida Console', monospace;
+  }
+  
+  .ClickButton:Hover {
+    border-style: outset;
+    border-color: #8f8f8f;
+    border-width: 2px;
+  
+    text-align: center;
+    font-family: 'Lucida Console', monospace;
+  }
+  
+  input {
+    border: true;
+  
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+  
+    border-color: #c7c7c7;
+  
+    border-style: solid;
+  
+    border-width: 2px;
+  
+    text-align: center;
+    color: #000000;
+    font-family: 'Lucida Console', monospace;
+  }
+  
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type=number] {
+    appearance: textfield;
+  }
+  
+  #Amount_Input {
+    width: 100px;
+    height: 25px;
+    
+    margin: auto;
+    display: block;
+  }
+  
+  #Gamble_Button {
+    margin: auto;
+    display: block;
+  
+    text-align: center;
+  }
+  
+  #Gamble_All_Button {
+    margin: auto;
+    display: block;
+  
+    text-align: center;
+  }
+  
+  #Text2 {
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 11px;
+  
+    margin: auto;
+    display: block;
+    text-align: center;
+  }

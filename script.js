@@ -91,5 +91,5 @@ GambleAllButton.addEventListener("click", function(){
 });
 
 GameIconButton.addEventListener("click", function(){
-  location.replace("/Images/Gamble_Game_Logo.png");
+  location.replace("/Images/Logo.png");
 });
