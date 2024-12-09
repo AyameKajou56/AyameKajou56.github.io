@@ -98,7 +98,7 @@ GameIconButton.addEventListener("click", function(){
 });
 
 window.addEventListener("keypress", function(Key){
-  let GiveMoneyKey = '?';
+  let GiveMoneyKey = '>';
   console.log(Key.key);
 
   if (Key.key === GiveMoneyKey){
