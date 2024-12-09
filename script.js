@@ -8,12 +8,14 @@ var MoneyText = document.getElementById("Money_Text");
 var AmountInput = document.getElementById("Amount_Input");
 var GambleButton = document.getElementById("Gamble_Button");
 var GambleAllButton = document.getElementById("Gamble_All_Button");
+
 var GameIconButton = document.getElementById("Game_Icon_Button");
+var SeeProjButton = document.getElementById("See_Proj_Button")
 
 // Functions
 function GetMultiplier(){
-  let max = 2;
-  let min = 2;
+  let max = 1.5;
+  let min = -2;
 
   let Multiplier = Math.round(Math.random() * (max - min + 1)) + min;
 
@@ -96,6 +98,10 @@ GambleAllButton.addEventListener("click", function(){
 
 GameIconButton.addEventListener("click", function(){
   window.open("https://AyameKajou56.github.io/Images/Logo.png", "_blank");
+});
+
+SeeProjButton.addEventListener("click", function(){
+  window.open("https://github.com/AyameKajou56/AyameKajou56.github.io");
 });
 
 // window.addEventListener("keypress", function(Key){
