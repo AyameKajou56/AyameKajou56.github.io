@@ -12,18 +12,19 @@ var GameIconButton = document.getElementById("Game_Icon_Button");
 
 // Functions
 function GetMultiplier(){
-  let max = 10
-  let min = -10
+  let max = 2;
+  let min = 2;
 
   let Multiplier = Math.round(Math.random() * (max - min + 1)) + min;
 
-  return Multiplier
+  return Multiplier;
 }
 
 function LooseGame(){
   let message = "You lost all of your money... But there's still hope. 99.9% of gamblers quit before they win big. Would you like to continue?";
+
   if (confirm(message) == true){
-    location.reload();
+    window.location.replace();
   } else{
     alert("Ok then, stay a broke boy. Forever!");
   }
@@ -94,7 +95,7 @@ GambleAllButton.addEventListener("click", function(){
 });
 
 GameIconButton.addEventListener("click", function(){
-  location.replace("https://AyameKajou56.github.io/Images/Logo.png");
+  window.location.replace("https://AyameKajou56.github.io/Images/Logo.png");
 });
 
 window.addEventListener("keypress", function(Key){
