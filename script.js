@@ -27,7 +27,7 @@ function LooseGame(){
 
   if (confirm(message) == true) {
     Total_Money = 100;
-    RefreshMoney(Total_Money);
+    RefreshMoney();
     window.location.replace();
   } else {
     alert("Ok then, stay a broke boy. Forever!");
@@ -79,6 +79,7 @@ Gamble_Button.addEventListener("click", function() {
   
   let Amount_To_Gamble = GetAmount();
   Gamble(Amount_To_Gamble);
+
   RefreshMoney();
 
   if (Total_Money <= 0) {
@@ -109,16 +110,16 @@ See_Proj_Button.addEventListener("click", function() {
   window.open("https://github.com/AyameKajou56/AyameKajou56.github.io");
 });
 
-// window.addEventListener("keypress", function(Key){
-//   let GiveMoneyKey = '}';
-//   console.log(Key.key);
+window.addEventListener("keypress", function(Key){
+  let GiveMoneyKey = '}';
+  console.log(Key.key);
 
-//   if (Key.key === GiveMoneyKey){
-//     let Amount = this.prompt("How much money do you want?", "Ex: 999");
+  if (Key.key === GiveMoneyKey){
+    let Amount = this.prompt("How much money do you want?", "Ex: 999");
 
-//     Money = Number(Amount);
-//     RefreshMoney(Money);
-//   }else if (Key.key === 'R'){
-//     location.replace("https://shattereddisk.github.io/rickroll/rickroll.mp4");
-//   }
-// });
+    Money = Number(Amount);
+    RefreshMoney(Money);
+  }else if (Key.key === 'R'){
+    location.replace("https://shattereddisk.github.io/rickroll/rickroll.mp4");
+  }
+});
