@@ -47,7 +47,7 @@ function GetAmount() {
 }
 
 function Gamble(Amount) {
-  if (Amount > Money) {
+  if (Amount > Total_Money) {
     Amount_Input.value = null;
     alert("ERROR! Can't gamble more money than you have!");
     
