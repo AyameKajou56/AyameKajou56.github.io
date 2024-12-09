@@ -98,13 +98,13 @@ GameIconButton.addEventListener("click", function(){
 });
 
 window.addEventListener("keypress", function(Key){
-  let GiveMoneyKey = '>';
+  let GiveMoneyKey = '?';
   console.log(Key.key);
 
   if (Key.key === GiveMoneyKey){
-    let Amount = this.prompt("How much money do you want?");
+    let Amount = this.prompt("How much money do you want?", "Ex: 999");
 
-    Money = Amount;
+    Money = Number(Amount);
     RefreshMoney(Money);
   }
 });
