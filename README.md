@@ -1,5 +1,5 @@
 # *$ Gambling Game $*
-This is my first website, hope you enjoy!
+This is my first [website](https://AyameKajou56.github.io), hope you enjoy!
 
 ![Gamble Game Logo](/Images/Logo.png)
 
@@ -23,4 +23,4 @@ This is my first website, hope you enjoy!
 
 ### Warnings:
 - This is all **FAKE** and is with virtual currency. I, AyameKajou56, the creator, am not responsible for anything that happens to any individual who plays this game,
-- Progress does not save, soon it will though. Feel free to suggest stuff through email! ("jojoslover42@gmail.com")
+- Progress does not save, soon it will though. Feel free to suggest stuff through email or discord!
