@@ -7,3 +7,5 @@
 ### Warnings:
 * This is all **FAKE** and is with virtual currency. I, AyameKajou56, the creator, am not responsible for anything that happens to the people who play this game.
 * Progress does not save, soon it will though. Feel free to suggest stuff through email! ("jojoslover42")
+
+Skibidi Rizzler
