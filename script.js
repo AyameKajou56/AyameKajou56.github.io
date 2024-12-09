@@ -13,7 +13,7 @@ var GameIconButton = document.getElementById("Game_Icon_Button");
 // Functions
 function GetMultiplier(){
   let max = 10
-  let min = -2
+  let min = -10
 
   let Multiplier = Math.round(Math.random() * (max - min + 1)) + min;
 
