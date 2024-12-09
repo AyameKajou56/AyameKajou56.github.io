@@ -12,7 +12,10 @@ var GameIconButton = document.getElementById("Game_Icon_Button");
 
 // Functions
 function GetMultiplier(){
-  let Multiplier = Math.round(Math.random() * (2.5 - -2 + 1)) + -2;
+  let max = 2.2
+  let min = -2
+
+  let Multiplier = Math.round(Math.random() * (max - min + 1)) + min;
 
   return Multiplier
 }
