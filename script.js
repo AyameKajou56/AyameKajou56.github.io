@@ -41,7 +41,7 @@ function RefreshMoney() {
 }
 
 function GetAmount() {
-  let Amount = Number(AmountInput.value);
+  let Amount = Number(Amount_Input.value);
 
   return Amount;
 }
