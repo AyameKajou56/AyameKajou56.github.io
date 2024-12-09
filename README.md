@@ -1,4 +1,4 @@
-# *$ Gambing Game $*
+# *$ Gambling Game $*
 This is my first website, hope you enjoy!
 
 ![Gamble Game Logo](/Images/Logo.png)

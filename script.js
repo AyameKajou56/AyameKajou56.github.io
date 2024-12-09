@@ -14,7 +14,7 @@ var SeeProjButton = document.getElementById("See_Proj_Button")
 
 // Functions
 function GetMultiplier(){
-  let max = 1.5;
+  let max = 2;
   let min = -2;
 
   let Multiplier = Math.round(Math.random() * (max - min + 1)) + min;
@@ -25,10 +25,13 @@ function GetMultiplier(){
 function LooseGame(){
   let message = "You lost all of your money... But there's still hope. 99.9% of gamblers quit before they win big. Would you like to continue?";
 
-  if (confirm(message) == true){
+  if (confirm(message) == true) {
+    Money = 100;
+    RefreshMoney(Money);
     window.location.replace();
-  } else{
+  } else {
     alert("Ok then, stay a broke boy. Forever!");
+    window.location.replace();
   }
   
 }
@@ -70,7 +73,7 @@ function GambleAll(AllMoney){
 
 // Events
 GambleButton.addEventListener("click", function() {
-  if (Money <= 0){
+  if (Money <= 0) {
     LooseGame();
   }
   
@@ -78,29 +81,31 @@ GambleButton.addEventListener("click", function() {
   Gamble(AmountToGamble);
   RefreshMoney(Money);
 
-  if (Money <= 0){
+  if (Money <= 0) {
     LooseGame();
   }
 });
 
-GambleAllButton.addEventListener("click", function(){
-  if (Money <= 0 || Money == undefined){
+// Events
+
+GambleAllButton.addEventListener("click", function() {
+  if (Money <= 0 || Money == undefined) {
     LooseGame();
   }
   
   GambleAll(Money);
   RefreshMoney(Money);
 
-  if (Money <= 0 || Money == undefined){
+  if (Money <= 0 || Money == undefined) {
     LooseGame();
   }
 });
 
-GameIconButton.addEventListener("click", function(){
+GameIconButton.addEventListener("click", function() {
   window.open("https://AyameKajou56.github.io/Images/Logo.png", "_blank");
 });
 
-SeeProjButton.addEventListener("click", function(){
+SeeProjButton.addEventListener("click", function() {
   window.open("https://github.com/AyameKajou56/AyameKajou56.github.io");
 });
 
