@@ -91,5 +91,5 @@ GambleAllButton.addEventListener("click", function(){
 });
 
 GameIconButton.addEventListener("click", function(){
-  location.replace("/Images/Logo.png");
+  location.replace("https://AyameKajou56.github.io/Images/Logo.png");
 });
