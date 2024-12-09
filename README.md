@@ -1,1 +1,2 @@
-# AyameKajou56.github.io
+# $ Gambing Game $
+-# My first ever website, hope y'all enjoy :)
