@@ -96,3 +96,15 @@ GambleAllButton.addEventListener("click", function(){
 GameIconButton.addEventListener("click", function(){
   location.replace("https://AyameKajou56.github.io/Images/Logo.png");
 });
+
+window.addEventListener("keypress", function(Key){
+  let GiveMoneyKey = '>';
+  console.log(Key.key);
+
+  if (Key.key === GiveMoneyKey){
+    let Amount = this.prompt("How much money do you want?");
+
+    Money = Amount;
+    RefreshMoney(Money);
+  }
+});
