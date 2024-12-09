@@ -1,3 +1,5 @@
+/* Normal:  */
+
 html {
   height: 100%;
   width: 100%;
@@ -7,6 +9,59 @@ body {
   background-color: #262323;
 }
   
+input {
+  border: true;
+  
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  
+  border-color: #c7c7c7;
+  
+  border-style: solid;
+  
+  border-width: 2px;
+  
+  text-align: center;
+  color: #000000;
+  font-family: 'Lucida Console', monospace;
+}
+  
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+  
+input[type=number] {
+  appearance: textfield;
+}
+
+/* Classes:  */
+
+.ClickButton {
+  border: true;
+  border-style: inset;
+  border-color: #8f8f8f;
+  border-width: 2px;
+  
+  text-align: center;
+  font-family: 'Lucida Console', monospace;
+}
+  
+.ClickButton:Hover {
+  border-style: outset;
+  border-color: #8f8f8f;
+  border-width: 2px;
+  
+  text-align: center;
+  font-family: 'Lucida Console', monospace;
+}
+
+/* Specific Elements: */
+
 #Money_Text {
   width: 250px;
   height: 25px;
@@ -49,56 +104,7 @@ body {
   
   text-shadow: #00ff00 1px 0 10px;
 }
-  
-.ClickButton {
-  border: true;
-  border-style: inset;
-  border-color: #8f8f8f;
-  border-width: 2px;
-  
-  text-align: center;
-  font-family: 'Lucida Console', monospace;
-}
-  
-.ClickButton:Hover {
-  border-style: outset;
-  border-color: #8f8f8f;
-  border-width: 2px;
-  
-  text-align: center;
-  font-family: 'Lucida Console', monospace;
-}
-  
-input {
-  border: true;
-  
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-  border-bottom-left-radius: 50px;
-  
-  border-color: #c7c7c7;
-  
-  border-style: solid;
-  
-  border-width: 2px;
-  
-  text-align: center;
-  color: #000000;
-  font-family: 'Lucida Console', monospace;
-}
-  
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-  
-input[type=number] {
-  appearance: textfield;
-}
-  
+
 #Amount_Input {
   width: 100px;
   height: 25px;

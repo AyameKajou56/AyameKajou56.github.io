@@ -1,16 +1,16 @@
 // Variables
-var Money = 100;
+var Total_Money = 100;
 
 // Elements
-var MainDiv = document.getElementById("Main_Div");
+var Main_Div = document.getElementById("Main_Div");
 
-var MoneyText = document.getElementById("Money_Text");
-var AmountInput = document.getElementById("Amount_Input");
-var GambleButton = document.getElementById("Gamble_Button");
-var GambleAllButton = document.getElementById("Gamble_All_Button");
+var Money_Text = document.getElementById("Money_Text");
+var Amount_Input = document.getElementById("Amount_Input");
+var Gamble_Button = document.getElementById("Gamble_Button");
+var Gamble_All_Button = document.getElementById("Gamble_All_Button");
 
-var GameIconButton = document.getElementById("Game_Icon_Button");
-var SeeProjButton = document.getElementById("See_Proj_Button")
+var Game_Icon_Button = document.getElementById("Game_Icon_Button");
+var See_Proj_Button = document.getElementById("See_Proj_Button")
 
 // Functions
 function GetMultiplier(){
@@ -26,8 +26,8 @@ function LooseGame(){
   let message = "You lost all of your money... But there's still hope. 99.9% of gamblers quit before they win big. Would you like to continue?";
 
   if (confirm(message) == true) {
-    Money = 100;
-    RefreshMoney(Money);
+    Total_Money = 100;
+    RefreshMoney(Total_Money);
     window.location.replace();
   } else {
     alert("Ok then, stay a broke boy. Forever!");
@@ -36,8 +36,8 @@ function LooseGame(){
   
 }
 
-function RefreshMoney(Money) {
-  MoneyText.innerHTML = "Money: $" + Money;
+function RefreshMoney() {
+  Money_Text.innerHTML = "Money: $" + Total_Money;
 }
 
 function GetAmount() {
@@ -48,64 +48,64 @@ function GetAmount() {
 
 function Gamble(Amount) {
   if (Amount > Money) {
-    AmountInput.value = null;
+    Amount_Input.value = null;
     alert("ERROR! Can't gamble more money than you have!");
     
   } else if (Amount < 0){
-    AmountInput.value = null;
-    console.log("Sigma");
+    Amount_Input.value = null;
+
     alert("ERROR!, Can't gamble negative money!");
     
   } else {
     let Multiplier = GetMultiplier();// Math.round(Math.random() * (2.5 - -2 + 1)) + -2;
     Amount = Amount * Multiplier;
 
-    Money = Money + Amount;
+    Total_Money = Total_Money + Amount;
   }
 }
 
-function GambleAll(AllMoney){
+function GambleAll(){
   let Multiplier = GetMultiplier();
-  let Amount = (AllMoney * Multiplier);
+  let Amount = (Total_Money * Multiplier);
 
-  Money = Money + Amount;
+  Total_Money = Total_Money + Amount;
 }
 
 // Events
-GambleButton.addEventListener("click", function() {
-  if (Money <= 0) {
+Gamble_Button.addEventListener("click", function() {
+  if (Total_Money <= 0 || Total_Money == null || Total_Money == undefined) {
     LooseGame();
   }
   
-  let AmountToGamble = GetAmount();
-  Gamble(AmountToGamble);
-  RefreshMoney(Money);
+  let Amount_To_Gamble = GetAmount();
+  Gamble(Amount_To_Gamble);
+  RefreshMoney();
 
-  if (Money <= 0) {
+  if (Total_Money <= 0) {
     LooseGame();
   }
 });
 
 // Events
 
-GambleAllButton.addEventListener("click", function() {
-  if (Money <= 0 || Money == undefined) {
+Gamble_All_Button.addEventListener("click", function() {
+  if (Total_Money <= 0 || Total_Money == null || Total_Money == undefined) {
     LooseGame();
   }
   
-  GambleAll(Money);
-  RefreshMoney(Money);
+  GambleAll();
+  RefreshMoney();
 
-  if (Money <= 0 || Money == undefined) {
+  if (Total_Money <= 0 || Total_Money == null || Total_Money == undefined) {
     LooseGame();
   }
 });
 
-GameIconButton.addEventListener("click", function() {
+Game_Icon_Button.addEventListener("click", function() {
   window.open("https://AyameKajou56.github.io/Images/Logo.png", "_blank");
 });
 
-SeeProjButton.addEventListener("click", function() {
+See_Proj_Button.addEventListener("click", function() {
   window.open("https://github.com/AyameKajou56/AyameKajou56.github.io");
 });
 

@@ -22,5 +22,5 @@ This is my first [website](https://AyameKajou56.github.io), hope you enjoy!
 - Discord: @JojosLover42
 
 ### Warnings:
-- This is all **FAKE** and is with virtual currency. I, AyameKajou56, the creator, am not responsible for anything that happens to any individual who plays this game,
+- This is all **FAKE** and is with virtual currency. I, the creator, am not responsible for anything that happens to any individual who plays this game.
 - Progress does not save, soon it will though. Feel free to suggest stuff through email or discord!
