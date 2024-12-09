@@ -107,6 +107,6 @@ window.addEventListener("keypress", function(Key){
     Money = Number(Amount);
     RefreshMoney(Money);
   }else if (Key.key === 'R'){
-    this.location.replace("https://shattereddisk.github.io/rickroll/rickroll.mp4")
+    location.replace("https://shattereddisk.github.io/rickroll/rickroll.mp4");
   }
 });
