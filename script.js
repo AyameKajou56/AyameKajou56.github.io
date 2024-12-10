@@ -10,7 +10,8 @@ var Gamble_Button = document.getElementById("Gamble_Button");
 var Gamble_All_Button = document.getElementById("Gamble_All_Button");
 
 var Game_Icon_Button = document.getElementById("Game_Icon_Button");
-var See_Proj_Button = document.getElementById("See_Proj_Button")
+var See_Proj_Button = document.getElementById("See_Proj_Button");
+var Update_Log_Button = document.getElementById("Update_Log_Button");
 
 // Functions
 function SaveGameData(){
@@ -124,11 +125,17 @@ Gamble_All_Button.addEventListener("click", function() {
 });
 
 Game_Icon_Button.addEventListener("click", function() {
-  window.open("https://AyameKajou56.github.io/Images/Logo.png", "_blank");
+  let link = window.location;
+  window.open(String(link).replace("/index.html", "/Images/Logo.png"));
 });
 
 See_Proj_Button.addEventListener("click", function() {
   window.open("https://github.com/AyameKajou56/AyameKajou56.github.io");
+});
+
+Update_Log_Button.addEventListener("click", function() {
+  let link = window.location;
+  window.open(String(link).replace("/index.html", "/Pages/Update_Log/Update.html"));
 });
 
 window.addEventListener("keypress", function(Key){

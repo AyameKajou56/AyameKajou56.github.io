@@ -1,0 +1,18 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+    
+body {
+    background-color: #262323;
+}
+
+.Text {
+    color: #ffffff;
+    font-family: 'Lucida Console', monospace;
+}
+
+.Bullet-Text {
+    color: #ffffff;
+    font-family: 'Lucia Console', monospace;
+}
