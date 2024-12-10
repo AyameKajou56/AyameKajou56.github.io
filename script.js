@@ -1,5 +1,5 @@
 // Variables
-var Total_Money = 100;
+var Total_Money = null;
 
 // Elements
 var Main_Div = document.getElementById("Main_Div");
@@ -13,6 +13,15 @@ var Game_Icon_Button = document.getElementById("Game_Icon_Button");
 var See_Proj_Button = document.getElementById("See_Proj_Button")
 
 // Functions
+function SaveGameData(){
+  window.localStorage.setItem("Money", Total_Money)
+}
+
+function LoadGameData(){
+  Total_Money = parseInt(window.localStorage.getItem("Money")) || 100;
+  RefreshMoney();
+}
+
 function GetMultiplier(){
   let max = 2;
   let min = -2;
@@ -26,12 +35,18 @@ function LooseGame(){
   let message = "You lost all of your money... But there's still hope. 99.9% of gamblers quit before they win big. Would you like to continue?";
 
   if (confirm(message) == true) {
+
     Total_Money = 100;
+    SaveGameData();
     RefreshMoney();
     window.location.replace();
+
   } else {
+
     alert("Ok then, stay a broke boy. Forever!");
+    SaveGameData();
     window.location.replace();
+
   }
   
 }
@@ -41,7 +56,7 @@ function RefreshMoney() {
 }
 
 function GetAmount() {
-  let Amount = Number(Amount_Input.value);
+  let Amount = parseInt(Amount_Input.value);
 
   return Amount;
 }
@@ -61,6 +76,7 @@ function Gamble(Amount) {
     Amount = Amount * Multiplier;
 
     Total_Money = Total_Money + Amount;
+    SaveGameData();
   }
 }
 
@@ -69,6 +85,7 @@ function GambleAll(){
   let Amount = (Total_Money * Multiplier);
 
   Total_Money = Total_Money + Amount;
+  SaveGameData();
 }
 
 // Events
@@ -86,6 +103,10 @@ Gamble_Button.addEventListener("click", function() {
     LooseGame();
   }
 });
+
+// Other
+
+LoadGameData();
 
 // Events
 

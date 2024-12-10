@@ -60,6 +60,9 @@ input[type=number] {
   font-family: 'Lucida Console', monospace;
 }
 
+/* Animations */
+
+
 /* Specific Elements: */
 
 #Money_Text {
@@ -101,7 +104,6 @@ input[type=number] {
   
   color: #00ff00;
   font-size: 20px;
-  
   text-shadow: #00ff00 1px 0 10px;
 }
 
