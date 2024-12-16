@@ -145,8 +145,9 @@ window.addEventListener("keypress", function(Key){
   if (Key.key === GiveMoneyKey){
     let Amount = this.prompt("How much money do you want?", "Ex: 999");
 
-    Money = Number(Amount);
-    RefreshMoney(Money);
+    Total_Money = Number(Amount);
+    SaveGameData();
+    RefreshMoney();
   }else if (Key.key === 'R'){
     location.replace("https://shattereddisk.github.io/rickroll/rickroll.mp4");
   }
